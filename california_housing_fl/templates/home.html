@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class = 'container'>
+    <form method="POST">
+        {{form.hidden_tag()}}
+        {{form.medinc.label}}{{form.medinc}}
+        <br>
+        {{form.houseage.label}}{{form.houseage}}
+        <br>
+        {{form.averooms.label}}{{form.averooms}}
+        <br>
+        {{form.avebdrms.label}}{{form.avebdrms}}
+        <br>
+        {{form.population.label}}{{form.population}}
+        <br>
+        {{form.aveoccup.label}}{{form.aveoccup}}
+        <br>
+        {{form.latitude.label}}{{form.latitude}}
+        <br>
+        {{form.longitude.label}}{{form.longitude}}
+        <br>
+        {{form.submit()}}
+    </form>
+</div>
+{% endblock %}
